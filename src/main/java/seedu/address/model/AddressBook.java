@@ -117,6 +117,14 @@ public class AddressBook implements ReadOnlyAddressBook {
         events.add(e);
     }
 
+    /**
+     * Removes {@code key} from this {@code AddressBook}.
+     * {@code key} must exist in the address book.
+     */
+    public void removeEvent(Event target) {
+        events.remove(target);
+    }
+
     //// util methods
 
     @Override

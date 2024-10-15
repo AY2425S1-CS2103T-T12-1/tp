@@ -102,6 +102,12 @@ public interface Model {
      */
     void addEvent(Event event);
 
+    /**
+     * Deletes the given person.
+     * The person must exist in the address book.
+     */
+    void deleteEvent(Event event);
+
     /** Returns an unmodifiable view of the filtered person list */
     ObservableList<Event> getFilteredEventList();
 

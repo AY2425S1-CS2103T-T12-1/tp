@@ -90,11 +90,7 @@ public class ModelManager implements Model {
         return addressBook;
     }
 
-    @Override
-    public boolean hasPerson(Person person) {
-        requireNonNull(person);
-        return addressBook.hasPerson(person);
-    }
+    
 
     @Override
     public boolean hasEvent(Event event) {
@@ -120,10 +116,21 @@ public class ModelManager implements Model {
         addressBook.setPerson(target, editedPerson);
     }
 
+    @Override
+    public boolean hasPerson(Person person) {
+        requireNonNull(person);
+        return addressBook.hasPerson(person);
+    }
+
     @Override 
     public void addEvent(Event event) {
         addressBook.addEvent(event);
         updateFilteredPersonList(PREDICATE_SHOW_ALL_EVENTS);
+    }
+
+    @Override
+    public void deleteEvent(Event target) {
+        addressBook.removeEvent(target)
     }
 
     //=========== Filtered Person List Accessors =============================================================
