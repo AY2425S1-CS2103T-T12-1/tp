@@ -108,7 +108,6 @@ public class AddressBook implements ReadOnlyAddressBook {
         return events.contains(event);
     }
 
-    
     /**
      * Adds a event to the address book.
      * The event must not already exist in the address book.
@@ -139,7 +138,7 @@ public class AddressBook implements ReadOnlyAddressBook {
         return persons.asUnmodifiableObservableList();
     }
 
-    @Override 
+    @Override
     public ObservableList<Event> getEventList() {
         return events.asUnmodifiableObservableList();
     }

@@ -90,8 +90,6 @@ public class ModelManager implements Model {
         return addressBook;
     }
 
-    
-
     @Override
     public boolean hasEvent(Event event) {
         requireNonNull(event);
@@ -122,7 +120,7 @@ public class ModelManager implements Model {
         return addressBook.hasPerson(person);
     }
 
-    @Override 
+    @Override
     public void addEvent(Event event) {
         addressBook.addEvent(event);
         updateFilteredPersonList(PREDICATE_SHOW_ALL_EVENTS);
