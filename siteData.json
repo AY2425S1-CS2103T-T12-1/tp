@@ -117,7 +117,7 @@
         "editing-a-person-edit": "Editing a person : edit",
         "locating-persons-by-name-find-p": "Locating persons by name: find p",
         "locating-event-by-name-find-e": "Locating event by name: find e",
-        "locating-persons-by-tag-search": "Locating persons by tag: search",
+        "locating-persons-by-tag-search-p": "Locating persons by tag: search p",
         "deleting-a-person-delete-p": "Deleting a person : delete p",
         "deleting-an-event-delete-e": "Deleting an event : delete e",
         "clearing-all-entries-clear": "Clearing all entries : clear",
