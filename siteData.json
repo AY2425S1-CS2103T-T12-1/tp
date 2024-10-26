@@ -137,7 +137,10 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "eventory": "Eventory"
+        "eventory": "Eventory",
+        "welcome-to-eventory-your-event-directory": "Welcome to Eventory: Your Event Directory",
+        "custom-built-for-event-planners": "Custom Built For Event Planners",
+        "powered-by-leading-technologies": "Powered By Leading Technologies"
       },
       "headingKeywords": {}
     },
