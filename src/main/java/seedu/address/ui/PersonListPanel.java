@@ -26,7 +26,8 @@ public class PersonListPanel extends UiPart<Region> {
     /**
      * Creates a {@code PersonListPanel} with the given {@code ObservableList}.
      */
-    public PersonListPanel(ObservableList<Person> personList, ObservableMap<Event, ObservableList<Person>> personEventMapping) {
+    public PersonListPanel(ObservableList<Person> personList,
+        ObservableMap<Event, ObservableList<Person>> personEventMapping) {
         super(FXML);
         this.personEventMapping = personEventMapping;
 

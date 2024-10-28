@@ -54,8 +54,8 @@ public class AddressBookParser {
         final String modelTypeShortHand = matcher.group("modelType");
         final ModelType modelType = ModelType.fromShorthand(modelTypeShortHand);
         final String arguments = (modelType == ModelType.NEITHER)
-        ? matcher.group("combined")
-        : matcher.group("arguments");
+            ? matcher.group("combined")
+            : matcher.group("arguments");
 
         ArrayList<Command> commands = new ArrayList<>();
 
@@ -63,56 +63,55 @@ public class AddressBookParser {
         // log messages such as the one below.
         // Lower level log messages are used sparingly to minimize noise in the code.
         logger.fine("Command word: " + commandWord + "; Model Type: " + modelType + "; Arguments: " + arguments);
-        
         switch (commandWord) {
-            case AddPersonCommand.COMMAND_WORD:
-                commands.add(new AddCommandParser().parse(modelType, arguments));
-                break;
-        
-            case EditPersonCommand.COMMAND_WORD:
-                commands.add(new EditCommandParser().parse(modelType, arguments));
-                break;
-        
-            case DeletePersonCommand.COMMAND_WORD:
-                commands.add(new DeleteCommandParser().parse(modelType, arguments));
-                break;
-        
-            case ClearCommand.COMMAND_WORD:
-                commands.add(new ClearCommand());
-                break;
-        
-            case FindPersonCommand.COMMAND_WORD:
-                commands.add(new FindCommandParser().parse(modelType, arguments));
-                break;
-        
-            case ListCommand.COMMAND_WORD:
-                commands.add(new ListCommand());
-                break;
-        
-            case ExitCommand.COMMAND_WORD:
-                commands.add(new ExitCommand());
-                break;
-        
-            case HelpCommand.COMMAND_WORD:
-                commands.add(new HelpCommand());
-                break;
-        
-            case SearchPersonCommand.COMMAND_WORD:
-                commands.add(new SearchCommandParser().parse(modelType, arguments));
-                break;
-        
-            case ScheduleCommand.COMMAND_WORD:
-                commands.add(new ScheduleParser().parse(modelType, arguments));
-                break;
-        
-            case LinkPersonCommand.COMMAND_WORD:
-                commands.add(new LinkCommandParser().parse(modelType, arguments));
-                commands.add(new ListCommand());
-                break;
-        
-            default:
-                logger.finer("This user input caused a ParseException: " + userInput);
-                throw new ParseException(MESSAGE_UNKNOWN_COMMAND);
+        case AddPersonCommand.COMMAND_WORD:
+            commands.add(new AddCommandParser().parse(modelType, arguments));
+            break;
+
+        case EditPersonCommand.COMMAND_WORD:
+            commands.add(new EditCommandParser().parse(modelType, arguments));
+            break;
+
+        case DeletePersonCommand.COMMAND_WORD:
+            commands.add(new DeleteCommandParser().parse(modelType, arguments));
+            break;
+
+        case ClearCommand.COMMAND_WORD:
+            commands.add(new ClearCommand());
+            break;
+
+        case FindPersonCommand.COMMAND_WORD:
+            commands.add(new FindCommandParser().parse(modelType, arguments));
+            break;
+
+        case ListCommand.COMMAND_WORD:
+            commands.add(new ListCommand());
+            break;
+
+        case ExitCommand.COMMAND_WORD:
+            commands.add(new ExitCommand());
+            break;
+
+        case HelpCommand.COMMAND_WORD:
+            commands.add(new HelpCommand());
+            break;
+
+        case SearchPersonCommand.COMMAND_WORD:
+            commands.add(new SearchCommandParser().parse(modelType, arguments));
+            break;
+
+        case ScheduleCommand.COMMAND_WORD:
+            commands.add(new ScheduleParser().parse(modelType, arguments));
+            break;
+
+        case LinkPersonCommand.COMMAND_WORD:
+            commands.add(new LinkCommandParser().parse(modelType, arguments));
+            commands.add(new ListCommand());
+            break;
+
+        default:
+            logger.finer("This user input caused a ParseException: " + userInput);
+            throw new ParseException(MESSAGE_UNKNOWN_COMMAND);
         }
         return commands;
     }

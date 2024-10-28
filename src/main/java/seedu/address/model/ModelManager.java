@@ -6,18 +6,13 @@ import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 import java.nio.file.Path;
 import java.util.function.Predicate;
 import java.util.logging.Logger;
-import java.util.HashSet;
 
 import javafx.collections.ObservableList;
 import javafx.collections.ObservableMap;
 import javafx.collections.transformation.FilteredList;
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.commons.core.LogsCenter;
-import seedu.address.model.types.common.Address;
-import seedu.address.model.types.common.Email;
-import seedu.address.model.types.common.Name;
 import seedu.address.model.types.common.PersonEventManager;
-import seedu.address.model.types.common.Phone;
 import seedu.address.model.types.event.Event;
 import seedu.address.model.types.person.Person;
 
@@ -137,9 +132,6 @@ public class ModelManager implements Model {
     @Override
     public void linkPersonToEvent(Person person, Event event) {
         requireAllNonNull(person, event);
-        Person dummyPerson = new Person(new Name("zz"), new Phone("12345678"), new Email("abc@example.com"), new Address("311, clem"), new HashSet<>());
-        addressBook.addPerson(dummyPerson);
-        addressBook.removePerson(dummyPerson);
         PersonEventManager.addPersonToEvent(person, event);
     }
     //=========== Filtered Person List Accessors =============================================================
@@ -230,7 +222,7 @@ public class ModelManager implements Model {
                 && filteredEvents.equals(otherModelManager.filteredEvents);
     }
 
-    //=========== PersonEventManager Methods==============================================================================
+    //=========== PersonEventManager Methods======================
 
     @Override
     public ObservableMap<Event, ObservableList<Person>> getPersonEventAssociationMap() {
