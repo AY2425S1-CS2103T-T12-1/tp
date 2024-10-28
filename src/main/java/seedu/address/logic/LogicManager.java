@@ -3,6 +3,7 @@ package seedu.address.logic;
 import java.io.IOException;
 import java.nio.file.AccessDeniedException;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 import javafx.collections.ObservableList;
@@ -48,10 +49,12 @@ public class LogicManager implements Logic {
     public CommandResult execute(String commandText) throws CommandException, ParseException {
         logger.info("----------------[USER COMMAND][" + commandText + "]");
 
-        CommandResult commandResult;
-        Command command = addressBookParser.parseCommand(commandText);
-        commandResult = command.execute(model);
-
+        ArrayList<Command> commands = addressBookParser.parseCommand(commandText);
+        CommandResult[] commandResults = new CommandResult[commands.size()];
+        for (int i = 0; i < commands.size(); i++) {
+            Command command = commands.get(i);
+            commandResults[i] = command.execute(model);
+        }
         try {
             storage.saveAddressBook(model.getAddressBook());
         } catch (AccessDeniedException e) {
@@ -60,7 +63,7 @@ public class LogicManager implements Logic {
             throw new CommandException(String.format(FILE_OPS_ERROR_FORMAT, ioe.getMessage()), ioe);
         }
  
-        return commandResult;
+        return commandResults[0];
     }
 
     @Override
