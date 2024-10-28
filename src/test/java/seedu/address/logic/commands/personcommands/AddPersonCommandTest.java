@@ -15,6 +15,7 @@ import java.util.function.Predicate;
 import org.junit.jupiter.api.Test;
 
 import javafx.collections.ObservableList;
+import javafx.collections.ObservableMap;
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.logic.Messages;
 import seedu.address.logic.commands.CommandResult;
@@ -208,6 +209,11 @@ public class AddPersonCommandTest {
 
         @Override
         public void reSortEvents() {
+            throw new AssertionError("This method should not be called.");
+        }
+
+        @Override
+        public ObservableMap<Event, ObservableList<Person>> getPersonEventAssociationMap() {
             throw new AssertionError("This method should not be called.");
         }
     }
