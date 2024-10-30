@@ -1,7 +1,10 @@
 package seedu.address.logic.commands.personcommands;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.address.logic.parser.CliSyntax.PREFIX_EVENT;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_START_TIME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;
 
 import java.util.List;
 
@@ -25,9 +28,12 @@ public class LinkPersonCommand extends Command {
     public static final String MESSAGE_USAGE = COMMAND_WORD
             + ": Links identified person to an event in the address book."
             + "Parameters: INDEX (must be a positive integer) "
-            + PREFIX_EVENT + "EVENT\n"
             + "Example: " + COMMAND_WORD + " 1 "
-            + PREFIX_EVENT + "Company Meeting";
+            + PREFIX_NAME + "Winter Time Convention "
+            + PREFIX_ADDRESS + "311, Clementi Ave 2, #02-25 "
+            + PREFIX_START_TIME + "2024-10-15 14:30 "
+            + PREFIX_TAG + "fashion "
+            + PREFIX_TAG + "convention";
 
     public static final String MESSAGE_LINK_SUCCESS = "Person linked to event: %1$s";
     public static final String MESSAGE_DUPLICATE_PERSON = "This person is already linked to the event";
