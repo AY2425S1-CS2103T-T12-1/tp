@@ -132,6 +132,7 @@ public class ModelManager implements Model {
     @Override
     public void linkPersonToEvent(Person person, Event event) {
         requireAllNonNull(person, event);
+        PersonEventManager.removePersonFromAllEvents(person);
         PersonEventManager.addPersonToEvent(person, event);
     }
     //=========== Filtered Person List Accessors =============================================================
