@@ -153,9 +153,9 @@ public class PersonEventManager {
      * @param target The event with the name to search for.
      * @return The event with the matching name, or null if not found.
      */
-    public static Event getEventByName(Event target) {
+    public static Event getEvent(Event target) {
         return eventPersonMap.keySet().stream()
-                .filter(event -> event.isSameEventName(target))
+                .filter(event -> event.isSameEvent(target))
                 .findFirst()
                 .orElse(null);
     }

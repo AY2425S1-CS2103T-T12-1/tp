@@ -193,7 +193,7 @@ public class AddPersonCommandTest {
         }
 
         @Override
-        public Event getEventByName(Event event) {
+        public Event getEvent(Event event) {
             return null;
         }
 

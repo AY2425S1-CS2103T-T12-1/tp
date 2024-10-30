@@ -182,9 +182,9 @@ public class ModelManager implements Model {
     }
 
     @Override
-    public Event getEventByName(Event event) {
+    public Event getEvent(Event event) {
         requireNonNull(event);
-        return PersonEventManager.getEventByName(event);
+        return PersonEventManager.getEvent(event);
     }
 
     //=========== Filtered Event List Accessors =============================================================

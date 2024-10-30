@@ -56,7 +56,7 @@ public class LinkPersonCommand extends Command {
         }
 
         Person personToLink = lastShownList.get(index.getZeroBased());
-        Event eventToLink = model.getEventByName(event);
+        Event eventToLink = model.getEvent(event);
 
         if (eventToLink == null) {
             throw new CommandException(MESSAGE_EVENT_NOT_FOUND);

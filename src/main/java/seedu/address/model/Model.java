@@ -131,7 +131,7 @@ public interface Model {
     /**
      * Returns the event with the same name as {@code event}.
      */
-    Event getEventByName(Event event);
+    Event getEvent(Event event);
 
     /** Returns an unmodifiable view of the filtered event list */
     ObservableList<Event> getFilteredEventList();

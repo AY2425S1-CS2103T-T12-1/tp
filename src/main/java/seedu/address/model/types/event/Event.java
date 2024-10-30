@@ -72,17 +72,6 @@ public class Event {
                 && otherEvent.getStartTime().equals(getStartTime());
     }
 
-    /**
-     * Returns true if both events have the same name
-     * We use this equality for our association command only
-     */
-    public boolean isSameEventName(Event otherEvent) {
-        if (otherEvent == this) {
-            return true;
-        }
-        return otherEvent.getName().equals(getName());
-    }
-
     public String getEventName() {
         return this.getName().toString();
     }
