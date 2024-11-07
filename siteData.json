@@ -123,6 +123,8 @@
         "deleting-a-person-delete-p": "Deleting a person : delete p",
         "deleting-an-event-delete-e": "Deleting an event : delete e",
         "linking-a-person-to-an-event-link": "Linking a person to an event : link",
+        "unlinking-a-person-from-an-event-unlink": "Unlinking a person from an event : unlink",
+        "schedule-an-event-schedule": "Schedule an event : schedule",
         "clearing-all-persons-clear-p": "Clearing all persons : clear p",
         "clearing-all-events-clear-e": "Clearing all events : clear e",
         "clearing-all-entries-clear": "Clearing all entries : clear",
