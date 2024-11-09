@@ -62,8 +62,21 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data"
+        "adding-an-event": "Adding an event",
+        "deleting-an-event": "Deleting an event",
+        "finding-an-event-by-name": "Finding an event by name",
+        "searching-a-contact-by-tag": "Searching a contact by tag",
+        "searching-an-event-by-tag": "Searching an event by tag",
+        "linking-a-contact-to-an-event": "Linking a contact to an event",
+        "unlinking-a-contact-to-an-event": "Unlinking a contact to an event",
+        "appendix-effort": "Appendix: Effort",
+        "project-scope-and-difficulty": "Project Scope and Difficulty",
+        "challenges-faced": "Challenges Faced",
+        "effort-required": "Effort Required",
+        "achievements": "Achievements",
+        "reuse-and-libraries": "Reuse and Libraries",
+        "conclusion": "Conclusion",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements"
       },
       "headingKeywords": {}
     },
