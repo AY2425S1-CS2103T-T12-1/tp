@@ -542,6 +542,6 @@ with(this){return _c('p',[_c('strong',[_v("Team Size: 5")])])}
 with(this){return _c('ol',[_c('li',[_c('strong',[_v("Enhance Error Handling")]),_v(" "),_c('ol',[_c('li',[_c('strong',[_v("Feature Flaw:")]),_v(" Current error messages are generic, with no specifics on the issue")]),_v(" "),_c('li',[_c('strong',[_v("Proposed Fix:")]),_v(" Improve the parser to be able to identify specific issues")]),_v(" "),_c('li',[_c('strong',[_v("Expected Outcome:")]),_v(" Improved ease of usage for users")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sat, 9 Nov 2024, 18:19:40 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sat, 9 Nov 2024, 21:40:51 GMT+8]")])])])}
 }];
   
