@@ -50,9 +50,6 @@
         "model-component": "Model component",
         "storage-component": "Storage component",
         "common-classes": "Common classes",
-        "implementation": "Implementation",
-        "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
-        "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -60,6 +57,7 @@
         "use-cases": "Use Cases",
         "non-functional-requirements": "Non-Functional Requirements",
         "glossary": "Glossary",
+        "requirements-yet-to-be-implemented": "Requirements yet to be implemented",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "adding-an-event": "Adding an event",
@@ -76,7 +74,14 @@
         "achievements": "Achievements",
         "reuse-and-libraries": "Reuse and Libraries",
         "conclusion": "Conclusion",
-        "appendix-planned-enhancements": "Appendix: Planned Enhancements"
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements",
+        "1-enhance-error-handling": "1. Enhance Error Handling",
+        "2-auto-switch-views-after-modifications": "2. Auto-Switch Views After Modifications",
+        "3-enhanced-duplicate-handling-for-contacts-and-events": "3. Enhanced Duplicate Handling for Contacts and Events",
+        "4-case-insensitive-matching-for-names-and-tags": "4. Case-Insensitive Matching for Names and Tags",
+        "5-simplified-tagging-for-multiple-tags": "5. Simplified Tagging for Multiple Tags",
+        "6-support-for-hyphenated-names": "6. Support for Hyphenated Names",
+        "7-partial-matching-for-find-and-search": "7. Partial Matching for Find and Search"
       },
       "headingKeywords": {}
     },
